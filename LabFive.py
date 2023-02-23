@@ -24,7 +24,7 @@ def get_search_term():
 
 
 def get_paste_data(poke_list, search_term):
-    title = (f'{search_term}\'s Abilities')
+    title = (f'{search_term.title()}\'s Abilities')
     divider =  '\n- '.join
     body_text = '- ' +divider(poke_list)
     return title, body_text
